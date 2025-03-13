@@ -7,6 +7,8 @@ ARG INCLUDE_ADVANCED_TOOLS=true
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
   && apt-get -y install --no-install-recommends python-dev-is-python3 build-essential python3 python3-pip python3-venv
 
+USER node
+
 # Install Bun
 RUN curl -fsSL https://bun.sh/install | bash
 
@@ -23,8 +25,8 @@ RUN if [ "$INCLUDE_ADVANCED_TOOLS" = "true" ]; then \
   curl -L https://ity.fuzz.land/ | bash \
   && /bin/bash -c "source ~/.bashrc && ~/.ityfuzz/bin/ityfuzzup" \
   # Install z3 and libssl-dev
-  && apt-get update && export DEBIAN_FRONTEND=noninteractive \
-  && apt-get -y install z3 libssl-dev \
+  && sudo apt-get update && export DEBIAN_FRONTEND=noninteractive \
+  && sudo apt-get -y install z3 libssl-dev \
   # Install halmos
   && pip install halmos --break-system-packages; \
   fi
