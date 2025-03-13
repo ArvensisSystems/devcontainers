@@ -1,17 +1,14 @@
+# Solidity Development Container
 
-# Hello, World (hello)
-
-A hello world Template
+A devcontainer with Foundry, Node, Roo Code, Slither, Z3, Halmos, and Bun installed.
 
 ## Options
 
-| Options Id | Description | Type | Default Value |
-|-----|-----|-----|-----|
-| imageVariant | Ubuntu version (use ubuntu-22.04 or ubuntu-18.04 on local arm64/Apple Silicon): | string | jammy |
-| greeting | Select a pre-made greeting, or enter your own | string | hey |
+| Options Id           | Description                                                                     | Type    | Default Value |
+| -------------------- | ------------------------------------------------------------------------------- | ------- | ------------- |
+| imageVariant         | Ubuntu version (use ubuntu-22.04 or ubuntu-18.04 on local arm64/Apple Silicon): | string  | jammy         |
+| includeAdvancedTools | Include advanced tools (ityfuzz, halmos, z3) in the container                   | boolean | true          |
 
+## Community
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-template.json](https://github.com/devcontainers/template-starter/blob/main/src/hello/devcontainer-template.json).  Add additional notes to a `NOTES.md`._
+Join the Arvensis Systems Discord community for support, discussions, and updates: [https://discord.gg/EBNzE8xtGa](https://discord.gg/EBNzE8xtGa)
