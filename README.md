@@ -1,6 +1,6 @@
 # Solidity Development Container
 
-A devcontainer with Foundry, Node, Roo Code, Slither, Z3, Halmos, and Bun installed.
+A devcontainer with Foundry, Node, Roo Code, Slither, Z3, Halmos, and Bun installed. Available at `ghcr.io/arvensissystems/devcontainers/soldev`.
 
 ## Options
 
