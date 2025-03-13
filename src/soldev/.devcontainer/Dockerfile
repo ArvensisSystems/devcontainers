@@ -30,11 +30,3 @@ RUN if [ "$INCLUDE_ADVANCED_TOOLS" = "true" ]; then \
   # Install halmos
   && pip install halmos --break-system-packages; \
   fi
-
-# Set PATH to include installed tools
-ENV PATH="/root/.foundry/bin:/root/.bun/bin:${PATH}"
-
-# Add ityfuzz to PATH only if advanced tools are included
-RUN if [ "$INCLUDE_ADVANCED_TOOLS" = "true" ]; then \
-  echo 'export PATH="/root/.ityfuzz/bin:${PATH}"' >> /etc/bash.bashrc; \
-  fi
