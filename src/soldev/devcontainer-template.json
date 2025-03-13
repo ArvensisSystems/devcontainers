@@ -1,0 +1,22 @@
+{
+  "id": "soldev",
+  "version": "1.0.0",
+  "name": "Solidity Development Container",
+  "description": "A devcontainer with Foundry, Node, Roo Code, Slither, Z3, Halmos, and Bun installed.",
+  "documentationURL": "https://github.com/ArvensisSystems/devcontainers/tree/main/src/soldev",
+  "licenseURL": "https://github.com/ArvensisSystems/devcontainers/blob/main/LICENSE",
+  "options": {
+    "imageVariant": {
+      "type": "string",
+      "description": "Ubuntu version (use ubuntu-22.04 or ubuntu-18.04 on local arm64/Apple Silicon):",
+      "proposals": ["jammy", "focal", "bionic"],
+      "default": "jammy"
+    },
+    "includeAdvancedTools": {
+      "type": "boolean",
+      "description": "Include advanced tools (ityfuzz, halmos, z3) in the container",
+      "default": true
+    }
+  },
+  "platforms": ["Any"]
+}

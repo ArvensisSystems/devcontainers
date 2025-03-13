@@ -1,0 +1,25 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+  "name": "Arvensis Development Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "INCLUDE_ADVANCED_TOOLS": "${templateOption:includeAdvancedTools}"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "JuanBlanco.solidity",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "aprilandjan.ascii-tree-generator",
+        "PraneshASP.vscode-solidity-inspector",
+        "runtimeverification.simbolik",
+        "tamasfe.even-better-toml",
+        "RooVeterinaryInc.roo-cline"
+      ]
+    }
+  }
+}
